@@ -5,7 +5,7 @@
     android:layout_width="match_parent" android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/ivBackdropImage"
+        android:id="@+id/ivPosterImage"
         android:layout_width="480dp"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/flicks_backdrop_placeholder"

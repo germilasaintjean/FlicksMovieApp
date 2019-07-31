@@ -25,8 +25,8 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
       ArrayList<Movie> movies;
       //config needed for image urls
        Config config;
-//       ViewGroup parent;
-//       ViewHolder holder;
+       ViewGroup parent;
+       ViewHolder holder;
         int position;
        //context for rendering
        Context context;
@@ -79,9 +79,10 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 
         //get the correct placeholder and imageView for the current orientation
         int placeholderId = isPortrait ? R.drawable.flicks_movie_placeholder : R.drawable.flicks_backdrop_placeholder;
-        ImageView imageView = isPortrait ? holder.ivPosterImage : holder.ivBackdropImage;
+        ImageView imageView = isPortrait ? holder.ivPosterImage : holder.ivPosterImage;
 
         //load image using glide
+
         Glide.with(context)
                 .load(imageUrl)
                 .bitmapTransform(new RoundedCornersTransformation(context, 25, 0))
@@ -107,7 +108,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
    public ViewHolder(View itemView) {
        super(itemView);
        ivPosterImage =(ImageView) itemView.findViewById(R.id.ivPosterImage);
-       ivBackdropImage = (ImageView) itemView.findViewById(R.id.ivPosterImage);
+       ivBackdropImage = (ImageView) itemView.findViewById(R.id.ivBackdropImage);
        tvOverview  =  (TextView) itemView.findViewById(R.id.tvOverview);
        tvTitle = (TextView) itemView.findViewById(R.id.tvTitle);
    }
