@@ -24,8 +24,8 @@
 
     <TextView
         android:id="@+id/tvTitle"
-        android:layout_width="233dp"
-        android:layout_height="50dp"
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
@@ -37,15 +37,15 @@
 
     <TextView
         android:id="@+id/tvOverview"
-        android:layout_width="250dp"
-        android:layout_height="117dp"
+        android:layout_width="247dp"
+        android:layout_height="145dp"
         android:layout_below="@+id/tvTitle"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="419dp"
-        android:layout_marginLeft="419dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginStart="422dp"
+        android:layout_marginLeft="422dp"
+        android:layout_marginTop="36dp"
         android:layout_toEndOf="@+id/ivPosterImage"
         android:layout_toRightOf="@+id/ivPosterImage"
         android:text="Movie overview and synopsis"
