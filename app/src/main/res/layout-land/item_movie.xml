@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:layout_margin="5dp"
-    android:layout_width="match_parent" android:layout_height="wrap_content">
+    android:background="@android:color/black">
 
     <ImageView
         android:id="@+id/ivPosterImage"
@@ -34,6 +36,7 @@
         android:layout_marginRight="8dp"
         android:text="Movie Title"
         android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@android:color/white"
         android:textSize="14sp" />
 
     <TextView
@@ -50,6 +53,7 @@
         android:layout_toEndOf="@+id/ivPosterImage"
         android:layout_toRightOf="@+id/ivPosterImage"
         android:text="Movie overview and synopsis"
+        android:textColor="@android:color/white"
         android:textSize="14sp" />
 
 </RelativeLayout>
