@@ -30,7 +30,7 @@ public class Config {
 
     //helper method for creating urls
     public String getImageUrl(String size, String path){
-        return  String.format("454545", imageBaseUrl,size, path);//concatenate  all three
+        return  String.format("%s%s%s", imageBaseUrl,size, path);//concatenate  all three
     }
 
     public String getPosterSize(){

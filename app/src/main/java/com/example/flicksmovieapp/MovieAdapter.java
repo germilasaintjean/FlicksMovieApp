@@ -71,6 +71,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 
         //if in portrait  mode , load the poster image
         if (isPortrait) {
+
          imageUrl = config.getImageUrl(config.getPosterSize(), movie.getPosterPath());
         }else{
             //load the backdrop image
@@ -79,7 +80,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 
         //get the correct placeholder and imageView for the current orientation
         int placeholderId = isPortrait ? R.drawable.flicks_movie_placeholder : R.drawable.flicks_backdrop_placeholder;
-        ImageView imageView = isPortrait ? holder.ivPosterImage : holder.ivPosterImage;
+        ImageView imageView = isPortrait ? holder.ivPosterImage : holder.ivBackdropImage;
 
         //load image using glide
 
@@ -108,7 +109,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
    public ViewHolder(View itemView) {
        super(itemView);
        ivPosterImage =(ImageView) itemView.findViewById(R.id.ivPosterImage);
-       ivBackdropImage = (ImageView) itemView.findViewById(R.id.ivBackdropImage);
+       ivBackdropImage = (ImageView) itemView.findViewById(R.id.ivPosterImage);
        tvOverview  =  (TextView) itemView.findViewById(R.id.tvOverview);
        tvTitle = (TextView) itemView.findViewById(R.id.tvTitle);
    }
